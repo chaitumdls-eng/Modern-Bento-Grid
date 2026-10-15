@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Bento Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <!-- Profile Widget -->
+      <header class="bento-box profile">
+        <h2>
+          Welcome Back,
+          <span id="username">Developer</span>
+          !
+        </h2>
+        <button id="theme-toggle" class="btn">Toggle Theme</button>
+      </header>
+
+      <!-- Weather Widget (API-ready) -->
+      <div class="bento-box weather">
+        <h3>Weather Status</h3>
+        <div id="weather-desc">Loading real-time data...</div>
+        <h1 id="temp">--°C</h1>
+      </div>
+
+      <!-- Interactive Task Manager -->
+      <div class="bento-box tasks">
+        <h3>Quick Tasks</h3>
+        <div class="task-input-container">
+          <input type="text" id="task-input" placeholder="Add a new task..." />
+          <button id="add-task-btn" class="btn">+</button>
+        </div>
+        <ul id="task-list"></ul>
+      </div>
+
+      <!-- Dynamic Counter Widget -->
+      <div class="bento-box analytics">
+        <h3>Activity Metrics</h3>
+        <div class="counter-display">
+          <span id="counter-value">0</span>
+          Tasks Completed
+        </div>
+      </div>
+
+      <!-- Tech Stack Component -->
+      <footer class="bento-box tech-stack">
+        <h3>Core Engine</h3>
+        <p>Built exclusively using HTML5, CSS Grid, and Vanilla JS Core.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
